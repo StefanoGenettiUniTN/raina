@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Hotel & Suites</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Google Fonts - Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Google Material Icons CDN -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Animate.css CDN (for initial hero animations) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- AOS (Animate On Scroll) CSS CDN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="rounded-elements">
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">Grand Hotel & Suites</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link nav-link-underline active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link nav-link-underline" href="#rooms">Rooms</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link nav-link-underline" href="#amenities">Amenities</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link nav-link-underline" href="#about">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link nav-link-underline" href="#contact">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link nav-link-underline" href="#location">Location</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link nav-link-underline" href="#activities">What to Do</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section d-flex align-items-center">
+      <div class="container">
+          <h1 class="animate__animated animate__fadeInDown">Welcome to Grand Hotel & Suites</h1>
+          <p class="lead animate__animated animate__fadeInUp">Your perfect getaway awaits with luxurious comfort and exceptional service.</p>
+          <a href="#rooms" class="btn btn-primary btn-lg animate__animated animate__zoomIn">Explore Rooms</a>
+      </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" class="py-5">
+      <div class="container">
+          <h2 class="section-heading" data-aos="fade-up">Our Apartments & B&B Rooms</h2>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+              <!-- Apartment Card 1 -->
+              <div class="col" data-aos="fade-up" data-aos-delay="100">
+                  <div class="card h-100">
+                      <img src="https://placehold.co/600x400/967D68/FFFFFF?text=Modern+Apartment" class="card-img-top" alt="Modern Apartment">
+                      <div class="card-body">
+                          <h5 class="card-title">Modern Apartment</h5>
+                          <p class="card-text">Spacious apartment with a fully equipped kitchen and living area, ideal for longer stays.</p>
+                          <a href="room-detail.html" class="room-detail-link">More details</a>
+                      </div>
+                  </div>
+              </div>
+              <!-- Apartment Card 2 -->
+              <div class="col" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card h-100">
+                      <img src="https://placehold.co/600x400/8A7463/FFFFFF?text=Family+Apartment" class="card-img-top" alt="Family Apartment">
+                      <div class="card-body">
+                          <h5 class="card-title">Family Apartment</h5>
+                          <p class="card-text">Two-bedroom apartment with ample space for families, offering comfort and privacy.</p>
+                          <a href="room-detail.html" class="room-detail-link">More details</a>
+                      </div>
+                  </div>
+              </div>
+              <!-- Apartment Card 3 -->
+              <div class="col" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card h-100">
+                      <img src="https://placehold.co/600x400/7C6755/FFFFFF?text=Deluxe+Apartment" class="card-img-top" alt="Deluxe Apartment">
+                      <div class="card-body">
+                          <h5 class="card-title">Deluxe Apartment</h5>
+                          <p class="card-text">Luxurious apartment with premium amenities and stunning views, perfect for a lavish experience.</p>
+                          <a href="room-detail.html" class="room-detail-link">More details</a>
+                      </div>
+                  </div>
+              </div>
+              <!-- B&B Room Card 1 -->
+              <div class="col" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card h-100">
+                      <img src="https://placehold.co/600x400/AD9D8B/FFFFFF?text=Classic+B&B+Room" class="card-img-top" alt="Classic B&B Room">
+                      <div class="card-body">
+                          <h5 class="card-title">Classic B&B Room</h5>
+                          <p class="card-text">Charming room with a comfortable bed and traditional decor, includes complimentary breakfast.</p>
+                          <a href="room-detail.html" class="room-detail-link">More details</a>
+                      </div>
+                  </div>
+              </div>
+              <!-- B&B Room Card 2 -->
+              <div class="col" data-aos="fade-up" data-aos-delay="500">
+                  <div class="card h-100">
+                      <img src="https://placehold.co/600x400/C5BBAF/FFFFFF?text=Superior+B&B+Room" class="card-img-top" alt="Superior B&B Room">
+                      <div class="card-body">
+                          <h5 class="card-title">Superior B&B Room</h5>
+                          <p class="card-text">Spacious B&B room with enhanced amenities and a garden view, includes complimentary breakfast.</p>
+                          <a href="room-detail.html" class="room-detail-link">More details</a>
+                      </div>
+                  </div>
+              </div>
+              <!-- B&B Room Card 3 -->
+              <div class="col" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card h-100">
+                      <img src="https://placehold.co/600x400/DDD6CF/FFFFFF?text=Cozy+B&B+Room" class="card-img-top" alt="Cozy B&B Room">
+                      <div class="card-body">
+                          <h5 class="card-title">Cozy B&B Room</h5>
+                          <p class="card-text">Intimate and inviting B&B room, perfect for a relaxing stay with a delicious breakfast included.</p>
+                          <a href="room-detail.html" class="room-detail-link">More details</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Amenities Section -->
+  <section id="amenities" class="py-5 bg-light">
+      <div class="container">
+          <h2 class="section-heading" data-aos="fade-up">Our Amenities</h2>
+          <div class="row text-center">
+              <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="p-4 bg-white rounded-elements shadow-sm h-100 d-flex flex-column justify-content-center align-items-center">
+                      <i class="material-icons amenities-icon">wifi</i>
+                      <h4 class="mt-3">Free Wi-Fi</h4>
+                      <p>Stay connected with high-speed internet access throughout the hotel.</p>
+                  </div>
+              </div>
+              <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="p-4 bg-white rounded-elements shadow-sm h-100 d-flex flex-column justify-content-center align-items-center">
+                      <i class="material-icons amenities-icon">restaurant</i>
+                      <h4 class="mt-3">Restaurant & Bar</h4>
+                      <p>Enjoy exquisite dining options and a relaxing bar experience.</p>
+                  </div>
+              </div>
+              <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="p-4 bg-white rounded-elements shadow-sm h-100 d-flex flex-column justify-content-center align-items-center">
+                      <i class="material-icons amenities-icon">pool</i>
+                      <h4 class="mt-3">Swimming Pool</h4>
+                      <p>Relax and refresh in our pristine outdoor swimming pool.</p>
+                  </div>
+              </div>
+              <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                  <div class="p-4 bg-white rounded-elements shadow-sm h-100 d-flex flex-column justify-content-center align-items-center">
+                      <i class="material-icons amenities-icon">local_parking</i>
+                      <h4 class="mt-3">Free Parking</h4>
+                      <p>Convenient and secure parking available for all guests.</p>
+                  </div>
+              </div>
+              <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+                  <div class="p-4 bg-white rounded-elements shadow-sm h-100 d-flex flex-column justify-content-center align-items-center">
+                      <i class="material-icons amenities-icon">fitness_center</i>
+                      <h4 class="mt-3">Fitness Center</h4>
+                      <p>Maintain your routine in our fully equipped fitness center.</p>
+                  </div>
+              </div>
+              <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+                  <div class="p-4 bg-white rounded-elements shadow-sm h-100 d-flex flex-column justify-content-center align-items-center">
+                      <i class="material-icons amenities-icon">business_center</i>
+                      <h4 class="mt-3">Meeting Rooms</h4>
+                      <p>State-of-the-art facilities for your business meetings and events.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-us-section py-5">
+      <div class="container">
+          <h2 class="section-heading" data-aos="fade-up">About Us</h2>
+          <div class="row align-items-center">
+              <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+                  <img src="https://placehold.co/600x400/BFB2A7/3A2E2A?text=Hotel+Lobby" class="img-fluid rounded-elements" alt="Hotel Lobby">
+              </div>
+              <div class="col-md-6" data-aos="fade-left">
+                  <p class="lead">Welcome to Grand Hotel & Suites, where luxury meets comfort. Established in 1990, our hotel has been a beacon of hospitality, offering guests an unforgettable experience with world-class amenities and personalized service.</p>
+                  <p>Nestled in the heart of the city, we provide easy access to major attractions while offering a tranquil retreat. Our dedicated team is committed to making your stay as enjoyable and memorable as possible, whether you're traveling for business or leisure.</p>
+                  <p>Experience the difference with our elegant rooms, exquisite dining, and a warm, inviting atmosphere that makes you feel right at home.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+      <div class="container">
+          <h2 class="section-heading" data-aos="fade-up">Contact Us</h2>
+          <div class="contact-info-container" data-aos="fade-up" data-aos-delay="100">
+              <p class="lead">We're here to assist you!</p>
+              <p><i class="material-icons">phone</i> Phone: +1 (123) 456-7890</p>
+              <p><i class="material-icons">email</i> Email: info@grandhotel.com</p>
+          </div>
+      </div>
+  </section>
+
+  <!-- Where We Are Section -->
+  <section id="location" class="py-5 bg-light">
+      <div class="container">
+          <h2 class="section-heading" data-aos="fade-up">Where We Are</h2>
+          <p class="text-center mb-4" data-aos="fade-up" data-aos-delay="100">
+              The Grand Hotel & Suites is located in the heart of Val di Non, in the hamlet of Castelfondo in Borgo d'Anaunia (TN).<br>An ideal place for those seeking relaxation, nature and culture among apple orchards, canyons and castles.
+          </p>
+          <p class="text-center mb-4" data-aos="fade-up" data-aos-delay="100"><strong>via Forcola 3, fraz. Castelfondo 38013 Borgo d'Anaunia (TN)</strong></p>
+          <div class="row g-4 align-items-center">
+              <!-- Map -->
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                  <div class="ratio ratio-16x9 rounded shadow-sm">
+                      <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2158.21294511349!2d11.114246575269256!3d46.453279366906735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478291a8d1fd149b%3A0x5ff5d1a3716fe25b!2sMas%20di%20Siti%20B%26B!5e1!3m2!1sit!2sit!4v1747035622996!5m2!1sit!2sit"
+                          width="600"
+                          height="450"
+                          style="border:0;"
+                          allowfullscreen=""
+                          loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade">
+                      </iframe>
+                  </div>
+              </div>
+              <!-- Attractions -->
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                  <h5 class="mb-3">Nearby Attractions</h5>
+                  <ul class="list-unstyled">
+                      <li class="mb-2"><span class="material-icons align-middle me-2">place</span><strong>Canyon Rio Sass</strong> - 5 min by car</li>
+                      <li class="mb-2"><span class="material-icons align-middle me-2">place</span><strong>Novella River Park</strong> - 15 min by car</li>
+                      <li class="mb-2"><span class="material-icons align-middle me-2">place</span><strong>San Romedio Sanctuary</strong> - 20 min by car</li>
+                      <li class="mb-2"><span class="material-icons align-middle me-2">place</span><strong>Lake Tovel</strong> - 30 min by car</li>
+                      <li class="mb-2"><span class="material-icons align-middle me-2">place</span><strong>Thun Castle</strong> - 30 min by car</li>
+                      <li class="mb-2"><span class="material-icons align-middle me-2">place</span><strong>Folgarida Ski Slope</strong> - 40 min by car</li>
+                      <li class="mb-2"><span class="material-icons align-middle me-2">place</span><strong>Bolzano</strong> - 50 min by car</li>
+                      <li class="mb-2"><span class="material-icons align-middle me-2">place">place</span><strong>Trento</strong> - 1 hour by car</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- What to Do Section -->
+  <section id="activities" class="py-5">
+      <div class="container">
+          <h2 class="section-heading" data-aos="fade-up">What to do during your holiday</h2>
+          <p class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+              Experience Val di Non between nature, sports, and outdoor adventures, in every season.
+          </p>
+          <div class="row g-4">
+              <!-- Activity 1 -->
+              <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                  <a href="https://www.visitvaldinon.it/it/sport-itinerari" class="text-decoration-none text-dark" target="_blank">
+                      <div class="card h-100">
+                          <img src="https://placehold.co/800x500/967D68/FFFFFF?text=Skiing+Snowshoeing" class="card-img-top" alt="Winter sports in Val di Non">
+                          <div class="card-body d-flex flex-column justify-content-between">
+                              <div>
+                              <h5 class="card-title">Skiing and Snowshoeing</h5>
+                              <p class="card-text small">Skiing and snowshoeing amidst majestic snowy landscapes. Slopes for all levels, ideal for the whole family, in nearby resorts like Passo Mendola, Val d'Ultimo, Folgarida. Equipment rental available in the area.</p>
+                              </div>
+                              <div class="text-end mt-3">
+                                  <span class="dettagli-link">Learn more →</span>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <!-- Activity 2 -->
+              <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                  <a href="https://www.parcofluvialenovella.it/canyoning-castelfondo-2/" class="text-decoration-none text-dark" target="_blank">
+                      <div class="card h-100">
+                          <img src="https://placehold.co/800x500/8A7463/FFFFFF?text=Canyoning" class="card-img-top" alt="Canyoning">
+                          <div class="card-body d-flex flex-column justify-content-between">
+                              <div>
+                              <h5 class="card-title">Canyoning</h5>
+                              <p class="card-text small">Adventure through gorges and waterfalls with expert guides along the picturesque Novella. Accompanied by expert guides, you will traverse spectacular gorges, natural slides, and waterfalls in complete safety. A perfect activity for those seeking adrenaline and nature.</p>
+                              </div>
+                              <div class="text-end mt-3">
+                                  <span class="dettagli-link">Learn more →</span>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <!-- Activity 3 -->
+              <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                  <a href="https://www.visitvaldinon.it" class="text-decoration-none text-dark" target="_blank">
+                      <div class="card h-100">
+                          <img src="https://placehold.co/800x500/7C6755/FFFFFF?text=Hiking" class="card-img-top" alt="Mountain excursions in Val di Non">
+                          <div class="card-body d-flex flex-column justify-content-between">
+                              <div>
+                              <h5 class="card-title">Hiking</h5>
+                              <p class="card-text small">Panoramic walks among apple orchards, alpine lakes, and mountain huts in the Maddalene. The owner, an expert of the territory, is available for advice and guided tours by reservation. Experiences suitable for the whole family, with the possibility of reaching the mountain by car (paid service).</p>
+                              </div>
+                              <div class="text-end mt-3">
+                                  <span class="dettagli-link">Learn more →</span>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <!-- Activity 4 -->
+              <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                  <a href="https://www.parcofluvialenovella.it/" class="text-decoration-none text-dark" target="_blank">
+                      <div class="card h-100">
+                          <img src="https://placehold.co/800x500/AD9D8B/FFFFFF?text=Novella+River+Park" class="card-img-top" alt="Outdoor sports and walks in Val di Non">
+                          <div class="card-body d-flex flex-column justify-content-between">
+                              <div>
+                              <h5 class="card-title">Novella River Park</h5>
+                              <p class="card-text small">A fascinating route through canyons, walkways, and unspoiled nature. Also to be explored by kayak with expert guides. Ideal for all ages.</p>
+                              </div>
+                              <div class="text-end mt-3">
+                                  <span class="dettagli-link">Learn more →</span>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer mt-5" style="background-color: #4A3C32;">
+      <div class="container">
+          <p>&copy; 2024 Grand Hotel & Suites. All rights reserved.</p>
+          <p>
+              <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+          </p>
+          <div class="social-icons mt-3">
+              <!-- Social media icons using Google Material Icons -->
+              <a href="#" class="text-white mx-2"><i class="material-icons" style="font-size: 1.5rem;">facebook</i></a>
+              <a href="#" class="text-white mx-2"><i class="material-icons" style="font-size: 1.5rem;">&#xe88e;</i></a> <!-- Twitter icon from Material Icons extended set -->
+              <a href="#" class="text-white mx-2"><i class="material-icons" style="font-size: 1.5rem;">&#xf05c;</i></a> <!-- Instagram icon from Material Icons extended set -->
+          </div>
+      </div>
+  </footer>
+
+  <!-- Bootstrap JS CDN (Bundle with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- AOS (Animate On Scroll) JS CDN -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      // Initialize AOS
+      AOS.init({
+          duration: 1000, // Duration of animation (milliseconds)
+          once: true,    // Whether animation should happen only once - while scrolling down
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Hotel & Suites - Modern Apartment Details</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Google Material Icons CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Animate.css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- AOS (Animate On Scroll) CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfcfb; /* Very light cream/beige for elegance */
+        }
+        .navbar-brand {
+            font-weight: 700;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.75); /* Lighter text for dark background */
+        }
+        /* Style for navigation links with animated underline */
+        .nav-link-underline {
+            position: relative;
+            text-decoration: none; /* No default underline */
+            transition: color 0.3s ease; /* Smooth transition for text color */
+        }
+        .nav-link-underline:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px; /* Position the underline slightly below the text */
+            height: 2px;
+            width: 100%;
+            background-color: #B58E4A; /* Underline color, golden/bronze for nav links */
+            transform: scaleX(0); /* Hidden by default */
+            transform-origin: left; /* Animation starts from the left */
+            transition: transform 0.3s ease-out; /* Smooth transition for the underline */
+        }
+        .navbar-dark .navbar-nav .nav-link-underline.active,
+        .navbar-dark .navbar-nav .nav-link-underline:hover {
+            color: #ffffff;
+        }
+        .nav-link-underline:hover:after {
+            transform: scaleX(1); /* Show the underline on hover */
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x400/5A4E45/F5F0EB?text=Modern+Apartment+Hero') no-repeat center center/cover;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .hero-section p {
+            font-size: 1.15rem;
+        }
+        .section-heading {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #3A2E2A; /* Darker brown for headings */
+        }
+        .room-detail-content {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            margin-top: 50px;
+        }
+        .room-detail-content h2 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #3A2E2A;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .room-gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+        }
+        .room-description-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .amenities-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .amenities-list li {
+            font-size: 1rem;
+            color: #3A2E2A;
+            margin: 10px 15px;
+            display: flex;
+            align-items: center;
+            min-width: 180px; /* Ensure items don't get too squished */
+        }
+        .amenities-list li .material-icons {
+            margin-right: 8px;
+            font-size: 1.5rem;
+            color: #B58E4A; /* Golden/bronze for icons */
+        }
+        .btn-primary {
+            background-color: #8B6D45; /* Medium wood brown */
+            border-color: #8B6D45;
+            border-radius: 50px;
+            padding: 10px 30px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #6F5736; /* Slightly darker wood brown */
+            border-color: #6F5736;
+        }
+        .footer {
+            background-color: #4A3C32; /* Dark wood brown */
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 80px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        /* Rounded corners for all elements, where applicable */
+        .rounded-elements * {
+            border-radius: 0.5rem !important; /* Apply to all nested elements with rounded corners */
+        }
+        .navbar, .btn, .form-control, .form-check-input {
+            border-radius: 0.5rem;
+        }
+        .material-icons {
+            vertical-align: middle; /* Align icons better with text if they are inline */
+        }
+        .back-button {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body class="rounded-elements">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #4A3C32;">
+        <div class="container">
+            <a class="navbar-brand" href="#">Grand Hotel & Suites</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-underline" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-underline active" aria-current="page" href="rooms.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-underline" href="index.html#amenities">Amenities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-underline" href="index.html#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-underline" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section for Single Room Page -->
+    <section id="room-hero" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown">The Modern Apartment</h1>
+            <p class="lead animate__animated animate__fadeInUp">Experience contemporary comfort and thoughtful design.</p>
+        </div>
+    </section>
+
+    <div class="container py-5">
+        <div class="room-detail-content" data-aos="fade-up">
+            <h2>Modern Apartment Overview</h2>
+            <div class="row room-gallery g-3 mb-4">
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://placehold.co/800x600/967D68/FFFFFF?text=Modern+Apartment+View+1" alt="Modern Apartment View 1">
+                </div>
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://placehold.co/800x600/967D68/FFFFFF?text=Modern+Apartment+View+2" alt="Modern Apartment View 2">
+                </div>
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://placehold.co/800x600/967D68/FFFFFF?text=Modern+Apartment+Kitchen" alt="Modern Apartment Kitchen">
+                </div>
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://placehold.co/800x600/967D68/FFFFFF?text=Modern+Apartment+Bedroom" alt="Modern Apartment Bedroom">
+                </div>
+            </div>
+
+            <p class="room-description-text" data-aos="fade-up" data-aos-delay="500">
+                Our Modern Apartment offers a stylish and spacious retreat for guests seeking independence and comfort. Featuring a bright, open-plan living area, a state-of-the-art kitchen with all necessary appliances, and a serene private bedroom, it's perfect for extended stays or for those who appreciate the convenience of a fully-equipped home. Enjoy the freedom to cook your own meals and relax in a beautifully designed space after a day of exploring.
+            </p>
+
+            <h3 class="text-center mb-4" data-aos="fade-up" data-aos-delay="600">Key Features & Amenities</h3>
+            <ul class="amenities-list" data-aos="fade-up" data-aos-delay="700">
+                <li><i class="material-icons">king_bed</i> King-sized Bed</li>
+                <li><i class="material-icons">square_foot</i> 650 sq ft (60 sqm)</li>
+                <li><i class="material-icons">kitchen</i> Fully Equipped Kitchen</li>
+                <li><i class="material-icons">wifi</i> High-speed Wi-Fi</li>
+                <li><i class="material-icons">tv</i> Smart TV with Streaming</li>
+                <li><i class="material-icons">lightbulb_outline</i> Modern Lighting</li>
+                <li><i class="material-icons">balcony</i> City View</li>
+                <li><i class="material-icons">air_conditioner</i> Air Conditioning</li>
+                <li><i class="material-icons">local_laundry_service</i> In-unit Laundry (select units)</li>
+            </ul>
+
+            <div class="d-grid gap-2 col-md-6 mx-auto mt-5" data-aos="zoom-in" data-aos-delay="800">
+                <a href="mailto:info@grandhotel.com" class="btn btn-primary btn-lg">Inquire about this room</a>
+            </div>
+
+            <div class="back-button" data-aos="fade-up" data-aos-delay="900">
+                <a href="rooms.html" class="btn btn-outline-secondary">
+                    <i class="material-icons align-middle">arrow_back</i> Back to all Rooms
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5" style="background-color: #4A3C32;">
+        <div class="container">
+            <p>&copy; 2024 Grand Hotel & Suites. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            </p>
+            <div class="social-icons mt-3">
+                <!-- Social media icons using Google Material Icons -->
+                <a href="#" class="text-white mx-2"><i class="material-icons" style="font-size: 1.5rem;">facebook</i></a>
+                <a href="#" class="text-white mx-2"><i class="material-icons" style="font-size: 1.5rem;">&#xe88e;</i></a> <!-- Twitter icon from Material Icons extended set -->
+                <a href="#" class="text-white mx-2"><i class="material-icons" style="font-size: 1.5rem;">&#xf05c;</i></a> <!-- Instagram icon from Material Icons extended set -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN (Bundle with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- AOS (Animate On Scroll) JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000, // Duration of animation (milliseconds)
+            once: true,    // Whether animation should happen only once - while scrolling down
+        });
+    </script>
+</body>
+</html>

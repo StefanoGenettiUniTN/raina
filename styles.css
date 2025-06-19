@@ -1,0 +1,203 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fdfcfb; /* Very light cream/beige for elegance */
+}
+.navbar {
+  background-color: #4A3C32;
+}
+.navbar-brand {
+    font-weight: 700;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+}
+/* New style for navigation links with animated underline */
+.nav-link-underline {
+    position: relative;
+    text-decoration: none; /* No default underline */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+.nav-link-underline:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Position the underline slightly below the text */
+    height: 2px;
+    width: 100%;
+    background-color: #B58E4A; /* Underline color, golden/bronze for nav links */
+    transform: scaleX(0); /* Hidden by default */
+    transform-origin: left; /* Animation starts from the left */
+    transition: transform 0.3s ease-out; /* Smooth transition for the underline */
+}
+.navbar-dark .navbar-nav .nav-link-underline.active,
+.navbar-dark .navbar-nav .nav-link-underline:hover {
+    color: #ffffff;
+}
+.nav-link-underline:hover:after {
+    transform: scaleX(1); /* Show the underline on hover */
+}
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x800/5A4E45/F5F0EB?text=Elegant+Hotel+Entrance') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+}
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #3A2E2A; /* Darker brown for headings */
+}
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none; /* Remove default Bootstrap border */
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+.btn-primary {
+    background-color: #8B6D45; /* Medium wood brown */
+    border-color: #8B6D45;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #6F5736; /* Slightly darker wood brown */
+    border-color: #6F5736;
+}
+.footer {
+    background-color: #4A3C32; /* Dark wood brown */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.amenities-icon {
+    font-size: 3rem;
+    color: #B58E4A; /* Golden/bronze for icons */
+    margin-bottom: 15px;
+}
+.about-us-section {
+    background-color: #F5F0EB; /* Light warm grey/beige */
+    padding: 80px 0;
+}
+.contact-info-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+.contact-info-container p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-info-container p .material-icons {
+    margin-right: 10px;
+    font-size: 1.8rem;
+    color: #8B6D45; /* Match button color for consistency */
+}
+/* Rounded corners for all elements, where applicable */
+.rounded-elements * {
+    border-radius: 0.5rem !important; /* Apply to all nested elements with rounded corners */
+}
+.navbar, .btn, .form-control, .form-check-input {
+    border-radius: 0.5rem;
+}
+.material-icons {
+    vertical-align: middle; /* Align icons better with text if they are inline */
+}
+/* Style for 'More details' links with animated underline */
+.room-detail-link {
+    font-weight: 500;
+    color: #6c757d; /* Default text color, a subtle grey */
+    position: relative;
+    text-decoration: none; /* No default underline */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+    cursor: pointer;
+}
+.room-detail-link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Position the underline slightly below the text */
+    height: 2px;
+    width: 100%;
+    background-color: #8B6D45; /* Underline color, matching wood brown */
+    transform: scaleX(0); /* Hidden by default */
+    transform-origin: left; /* Animation starts from the left */
+    transition: transform 0.3s ease-out; /* Smooth transition for the underline */
+}
+.room-detail-link:hover {
+    color: #3A2E2A; /* Darker text color on hover */
+}
+.room-detail-link:hover:after {
+    transform: scaleX(1); /* Show the underline on hover */
+}
+/* Specific style for location list items */
+#location .list-unstyled li {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px; /* Adjust as needed for alignment */
+}
+
+/* Style for 'Scopri di più' links in the What to Do section with animated underline */
+.dettagli-link {
+    font-weight: 500;
+    color: #6c757d; /* Default text color, a subtle grey */
+    position: relative;
+    text-decoration: none; /* No default underline */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+    cursor: pointer;
+    display: inline-block; /* Essential for :after pseudo-element to work correctly */
+}
+.dettagli-link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Position the underline slightly below the text */
+    height: 2px;
+    width: 100%;
+    background-color: #8B6D45; /* Underline color, matching wood brown */
+    transform: scaleX(0); /* Hidden by default */
+    transform-origin: left; /* Animation starts from the left */
+    transition: transform 0.3s ease-out; /* Smooth transition for the underline */
+}
+.dettagli-link:hover {
+    color: #3A2E2A; /* Darker text color on hover */
+}
+.dettagli-link:hover:after {
+    transform: scaleX(1); /* Show the underline on hover */
+}
