@@ -53,7 +53,7 @@ h1, h2, h3{
   width: 100%;
 }
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imgs/Manzar.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imgs/colazioni_02.jpg') no-repeat center center/cover;
     color: white;
     padding: 100px 0;
     text-align: center;
@@ -264,7 +264,7 @@ h1, h2, h3{
     border-radius: 0.5rem;
 }
 .family-img {
-    max-width: 70%; /* Adjust size as needed */
+    max-width: 50%; /* Adjust size as needed */
     border: 5px solid #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     margin: 0 auto 2rem auto;
