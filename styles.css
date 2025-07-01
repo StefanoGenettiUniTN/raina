@@ -52,6 +52,15 @@ h1, h2, h3{
 .nav-link:hover::after {
   width: 100%;
 }
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0.13rem;
+  left: auto;
+  right: 0;
+}
+.nav-item.dropdown .dropdown-menu {
+  transition: opacity 0.2s ease-in-out;
+}
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imgs/colazioni_02.jpg') no-repeat center center/cover;
     color: white;
