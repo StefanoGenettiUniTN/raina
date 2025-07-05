@@ -6,11 +6,11 @@ html {
   scroll-padding-top: 80px;
 }
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #fdfcfb;
-    padding-top: 70px;
-    overflow-x: hidden;
-    color: #2E2E2E;
+  font-family: 'Inter', sans-serif;
+  background-color: #fdfcfb;
+  padding-top: 70px;
+  overflow-x: hidden;
+  color: #2E2E2E;
 }
 h1, h2, h3{
   font-family: 'Playfair Display', serif;
