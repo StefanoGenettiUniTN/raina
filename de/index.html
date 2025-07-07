@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Raina</title>
+    <meta name="keywords" lang="it" content="Raina, Castelfondo, B&B Trentino, Val di Non, agriturismo Castelfondo, camere in montagna, vacanze natura, escursioni Trentino, soggiorno relax, canyoning, sci, Castel Thun, Lago di Tovel, vacanza in Trentino, guesthouse Dolomiti, albergo rustico, natura e silenzio, hiking Val di Non, soggiorno autentico">
+    <meta name="keywords" lang="en" content="Raina, Castelfondo, B&B Trentino, Val di Non, Castelfondo, mountain lodging, Trentino guesthouse, nature retreat Italy, eco-friendly stay, ski holidays Italy, canyoning Italy, hiking in the Dolomites, authentic accommodation, Val di Non hotel, Lake Tovel, Thun Castle, rural tourism Italy, peaceful holiday Italy">
+    <meta name="keywords" lang="de" content="Raina, Castelfondo, B&B Trentino, Val di Non, Castelfondo, Unterkunft in den Bergen, Urlaub in Südtirol, Gästehaus Val di Non, Natururlaub Italien, Wanderurlaub Dolomiten, nachhaltige Unterkunft, Skiurlaub Trentino, Canyoning Italien, authentischer Aufenthalt, Thun Schloss, Lago di Tovel, Bauernhofurlaub, ruhiger Urlaub Italien">
+    <meta name="description" lang="it" content="Raina è un'accogliente casa tipica a Castelfondo, Val di Non, Trentino. Offre camere confortevoli, colazioni locali e una vacanza autentica tra natura, escursioni e bellezze culturali come il Lago di Tovel e Castel Thun.">
+    <meta name="description" lang="en" content="Raina is a charming family-run bed and breakfast in Castelfondo, Val di Non, Trentino. Surrounded by nature and Alpine beauty, it offers cozy rooms, local breakfasts, and easy access to hiking, skiing, and cultural sites like Lago di Tovel and Castel Thun.">
+    <meta name="description" lang="de" content="Raina ist ein gemütliches, familiengeführtes B&B in Castelfondo, Val di Non, Trentino. Umgeben von Natur bietet es komfortable Zimmer, regionale Frühstücke und Nähe zu Wanderrouten, Skipisten und Sehenswürdigkeiten wie dem Tovelsee und Schloss Thun.">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../imgs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../imgs/favicon-16x16.png">
+
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter|Playfair+Display">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VY0LV7MXKT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-VY0LV7MXKT');
+    </script>
+    <script src="../script.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg py-3 fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">&Raina</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Über Uns</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bnb">B&B Zimmer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#apartments">Ferienwohnungen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#amenities">Serviceleistungen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#location">Standort</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#activities">Umgebung</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+
+                    <!-- Language Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown">
+                            🇩🇪 Sprache
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="../index.html">Italiano</a></li>
+                            <li><a class="dropdown-item" href="../en/index.html">English</a></li>
+                            <li><a class="dropdown-item" href="index.html">Deutsch</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero-Bereich -->
+    <section class="hero-section d-flex align-items-center" data-aos="fade-in">
+        <div class="container">
+            <h1>&Raina</h1>
+            <p class="lead">Ein kleines Fleckchen, das darauf wartet, entdeckt zu werden!</p>
+            <a href="#about" class="btn btn-primary btn-lg btn-with-arrow">Mehr erfahren <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+
+    <!-- Über uns Abschnitt -->
+    <section id="about" class="about-us-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+                    <img src="../imgs/44.jpg" class="img-fluid rounded-elements about-img" alt="Präsentationsfoto von B&B Raina">
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
+                    <h2 class="mb-3 mx-5"><strong>Raina: ein kleines Fleckchen, das darauf wartet, entdeckt zu werden</strong></h2>
+                    <p class="mx-5">Unser B&B entstand aus der Freude, neue Menschen kennenzulernen und willkommen zu heißen - Menschen, die verschieden sind, aus der Nähe kommen oder aus weit entfernten Ländern und Kulturen stammen.</p>
+                    <p class="mx-5">Menschen, die Spuren in unseren Herzen hinterlassen, Menschen, die zurückkehren, Menschen, die man vielleicht nie wieder sieht!</p>
+                    <p class="mx-5">Das ist das Schöne an einem Traum, der wahr geworden ist: zu reisen - und wenn man selbst nicht reisen kann, die Türen für jene zu öffnen, die es tun können!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Familienbereich -->
+    <section id="family" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center" data-aos="fade-up">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="../imgs/family-ghibli.png" class="img-fluid rounded-elements family-img mx-auto d-block" alt="Unsere Familie">
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="mb-3 mx-5"><strong>Unsere Familie</strong></h2>
+                    <p class="mx-5">Jeder von uns - Nadia, Ruben und Anna - hatte Spaß daran, „sein eigenes“ Zimmer zu entwerfen und zu dekorieren, ganz nach dem, was uns am meisten gefiel.</p>
+                    <p class="mx-5">Den letzten Schliff überließen wir Oma Maria Teresa - von der Häkelstickerei bis hin zu den kleinen Details, die unser B&B gemütlich und einzigartig machen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bed & Breakfast Bereich -->
+    <section id="bnb" class="py-5">
+        <div class="container">
+            <h2 class="section-heading mx-3" data-aos="fade-up">Bed & Breakfast</h2>
+            <p class="text-center mb-4 mx-3" data-aos="fade-up" data-aos-delay="50">
+                <span class="fs-4">Eine kleine handgemachte Welt</span><br>
+                In jedem Zimmer und im Frühstücksbereich findet sich etwas von uns - entworfen und von Hand gemacht.<br>
+                Ob Holz oder Stoff, Fotos oder Puzzles: Das Material spielt keine Rolle. Das Schöne am Einrichten eines Zuhauses ist, dass es durch selbstgemachte Dinge widerspiegelt, wer man ist!
+            </p>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- B&B Zimmerkarte 1 -->
+                <div class="col" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100">
+                        <img src="../imgs/larix_02.jpg" class="card-img-top" alt="Präsentationsfoto des Zimmers Larix">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Larix</h5>
+                                <p class="card-text">Warm und einzigartig, eingerichtet mit handrestauriertem Fichten- und Lärchenholz. Ein Hauch Geschichte und Kreativität für ein gemütliches Doppelzimmer.</p>
+                            </div>
+                            <div class="text-end mt-3">
+                                <a href="larix.html" class="room-detail-link">Details →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- B&B Zimmerkarte 2 -->
+                <div class="col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                        <img src="../imgs/romantica_02.jpg" class="card-img-top" alt="Präsentationsfoto des Zimmers Romantica">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Romantica</h5>
+                                <p class="card-text">Ein gemütliches Liebesnest, dekoriert mit Herzen aller Art - um die Schönheit der Gefühle wiederzuentdecken. Doppelbett (auch trennbar).</p>
+                            </div>
+                            <div class="text-end mt-3">
+                                <a href="romantica.html" class="room-detail-link">Details →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- B&B Zimmerkarte 3 -->
+                <div class="col" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100">
+                        <img src="../imgs/stagioni_02.jpg" class="card-img-top" alt="Präsentationsfoto des Zimmers Stagioni">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Stagioni</h5>
+                                <p class="card-text">Inspiriert vom Kreislauf der Natur, ist es mit originellen und handgefertigten Werken dekoriert. Es verfügt über zwei Einzelbetten.</p>
+                            </div>
+                            <div class="text-end mt-3">
+                                <a href="stagioni.html" class="room-detail-link">Details →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Apartment-Bereich -->
+    <section id="apartments" class="py-5">
+        <div class="container">
+            <h2 class="section-heading mx-3" data-aos="fade-up">Raina House Ferienwohnungen</h2>
+            <p class="text-center mb-4 mx-3" data-aos="fade-up" data-aos-delay="50">
+                Nach dem B&B haben wir auch an diejenigen gedacht, die aus verschiedenen Gründen Unabhängigkeit und Autonomie bevorzugen.<br>
+                Unser Ziel war es also, drei Ferienwohnungen zu schaffen - oder einfach für diejenigen, die dem Alltag entfliehen möchten!<br>
+                Jede Wohnung haben wir nach Orten in unseren Bergen benannt - spektakuläre Plätze, an denen uns Mutter Natur mit Stille, Düften und Farben beschenkt.
+            </p>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Apartmentkarte 1 -->
+                <div class="col" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100">
+                        <img src="../imgs/sous_14.jpg" class="card-img-top" alt="Präsentationsfoto der Wohnung Sous">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Sous</h5>
+                                <p class="card-text">Im Erdgeschoss gelegen, ist sie die größte und charakteristischste Wohnung. Wir haben sie selbst mit Fichtenholz aus den Bergen unseres Dorfes eingerichtet. Sie verfügt über zwei Schlafzimmer, ein Bad und einen hellen Wohnbereich mit Kochnische und Schlafsofa. Direkt daneben, aber unabhängig, befindet sich die Sordin: ein Doppelzimmer mit eigenem Bad. Ideal für Familien oder Gruppen.</p>
+                            </div>
+                            <div class="text-end mt-3">
+                                <a href="sous.html" class="room-detail-link">Details →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Apartmentkarte 2 -->
+                <div class="col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                        <img src="../imgs/sorasu_02.jpg" class="card-img-top" alt="Präsentationsfoto der Wohnung Sorasù">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Sorasù</h5>
+                                <p class="card-text">Ein gemütliches Refugium im ersten Stock mit Blick auf die Brenta-Gruppe. Es bietet ein Doppelzimmer, einen Wohnbereich mit Kochnische und Schlafsofa sowie ein komfortables, funktionales Bad.</p>
+                            </div>
+                            <div class="text-end mt-3">
+                                <a href="sorasu.html" class="room-detail-link">Details →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Apartmentkarte 3 -->
+                <div class="col" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100">
+                        <img src="../imgs/ronchi_07.jpg" class="card-img-top" alt="Präsentationsfoto der Wohnung Ronchi">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Ronchi</h5>
+                                <p class="card-text">Hell und einladend, mit Blick auf die Obstgärten. Sie bietet ein Doppelzimmer, einen Wohnbereich mit Kochnische und Schlafsofa sowie ein praktisches, komfortables Bad.</p>
+                            </div>
+                            <div class="text-end mt-3">
+                                <a href="ronchi.html" class="room-detail-link">Details →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Annehmlichkeiten-Bereich -->
+    <section id="amenities" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-up">Unsere Services</h2>
+            <p class="text-center mb-4 mx-auto" style="max-width: 700px;" data-aos="fade-up" data-aos-delay="100">
+                Hier liegt der Luxus in der Einfachheit: keine Fernseher in den B&B-Zimmern,  
+                nur die Stille der Natur, ein Sternenhimmel und der Duft von Blumen.  
+                Und wer verbunden bleiben möchte - Wi-Fi ist kostenlos.
+            </p>
+            <div class="row text-center">
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-4 bg-white rounded-elements shadow-sm h-100 d-flex flex-column justify-content-center align-items-center">
+                        <i class="material-icons amenities-icon">local_parking</i>
+                        <h4 class="mt-3">Parkplatz & Garage</h4>
+                        <p>Plätze für Autos, Motorräder, Fahrräder und Ausrüstung.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4 bg-white rounded-elements shadow-sm h-100 d-flex flex-column justify-content-center align-items-center">
+                        <i class="material-icons amenities-icon">restaurant</i>
+                        <h4 class="mt-3">Frühstücksraum</h4>
+                        <p>Beginnen Sie den Tag mit dem Geschmack lokaler Produkte.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-4 bg-white rounded-elements shadow-sm h-100 d-flex flex-column justify-content-center align-items-center">
+                        <i class="material-icons amenities-icon">landscape</i>
+                        <h4 class="mt-3">Terrasse</h4>
+                        <p>Genießen Sie den atemberaubenden Blick auf unsere Dolomiten.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="p-4 bg-white rounded-elements shadow-sm h-100 d-flex flex-column justify-content-center align-items-center">
+                        <i class="material-icons amenities-icon">wifi</i>
+                        <h4 class="mt-3">Wi-Fi</h4>
+                        <p>Kostenlose Verbindung im gesamten Gebäude.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Wo Wir Sind Bereich -->
+    <section id="location" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-heading mx-5" data-aos="fade-up">Wo Wir Sind</h2>
+            <p class="text-center mb-4 mx-5" data-aos="fade-up" data-aos-delay="100">
+                Wir befinden uns im oberen Val di Non, im Ortsteil Raina von Castelfondo, Teil von Borgo d'Anaunia (TN).
+            </p>
+            <!-- Gästemeinung -->
+            <div class="text-center mx-5 mb-4" data-aos="fade-up" data-aos-delay="150">
+                <p class="fs-5 text-secondary mb-0"><strong>Ein Gast schrieb einmal:</strong></p>
+                <p class="fst-italic fs-5 text-secondary">„Raina ist ein Stück Paradies inmitten unberührter Natur, wo das Leben seine Farben zurückgewinnt.“</p>
+            </div>
+            <p class="text-center mb-4 mx-5" data-aos="fade-up" data-aos-delay="100">
+                <strong>via Molinet 10, Fraktion Castelfondo, 38013 Borgo d'Anaunia (TN)</strong>
+            </p>
+            <div class="row g-4 align-items-center">
+                <!-- Karte -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="ratio ratio-16x9 rounded shadow-sm">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43990.70061361993!2d11.067588812830481!3d46.440398503100134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478291b6fa7eaf01%3A0x7d58243d188e14d9!2sB%26B%20RAINA!5e0!3m2!1sen!2sen!4v1750682830835!5m2!1sen!2sen"
+                            width="600" 
+                            height="450" 
+                            style="border:0;"
+                            allowfullscreen="" 
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <!-- Sehenswürdigkeiten -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="mb-3">Sehenswürdigkeiten in der Nähe</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><span class="material-icons align-middle me-2">place</span><strong>Canyon Rio Sass</strong> - 5 Min. mit dem Auto</li>
+                        <li class="mb-2"><span class="material-icons align-middle me-2">place</span><strong>Flusspark Novella</strong> - 15 Min. mit dem Auto</li>
+                        <li class="mb-2"><span class="material-icons align-middle me-2">place</span><strong>Wallfahrtsort San Romedio</strong> - 20 Min. mit dem Auto</li>
+                        <li class="mb-2"><span class="material-icons align-middle me-2">place</span><strong>Lake Tovel</strong> - 30 Min. mit dem Auto</li>
+                        <li class="mb-2"><span class="material-icons align-middle me-2">place</span><strong>Schloss Thun</strong> - 30 Min. mit dem Auto</li>
+                        <li class="mb-2"><span class="material-icons align-middle me-2">place</span><strong>Skipisten Folgarida</strong> - 40 Min. mit dem Auto</li>
+                        <li class="mb-2"><span class="material-icons align-middle me-2">place</span><strong>Meran</strong> - 50 Min. mit dem Auto</li>
+                        <li class="mb-2"><span class="material-icons align-middle me-2">place</span><strong>Bozen</strong> - 50 Min. mit dem Auto</li>
+                        <li class="mb-2"><span class="material-icons align-middle me-2">place</span><strong>Trient</strong> - 1 Stunde mit dem Auto</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Was Man Im Urlaub Unternehmen Kann -->
+    <section id="activities" class="py-5">
+        <div class="container">
+            <h2 class="section-heading mx-5" data-aos="fade-up">Was man im Urlaub unternehmen kann</h2>
+            <p class="text-center mb-5 mx-5" data-aos="fade-up" data-aos-delay="100">
+                Erleben Sie das Val di Non durch Natur, Sport und Outdoor-Abenteuer - zu jeder Jahreszeit.
+            </p>
+            <div class="row g-4">
+                <!-- Aktivität 1 -->
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://www.visitvaldinon.it/it/sport-itinerari" class="text-decoration-none text-dark" target="_blank">
+                        <div class="card h-100">
+                            <img src="../imgs/skiing.jpeg" class="card-img-top" alt="Wintersport im Val di Non">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title">Skifahren & Schneeschuhwandern</h5>
+                                    <p class="card-text small">Skifahren und Schneeschuhwandern in majestätischer Schneelandschaft. Pisten für jedes Niveau, ideal für die ganze Familie, in nahegelegenen Gebieten wie Passo Mendola, Ultental und Folgarida. Ausrüstungsverleih in der Umgebung verfügbar.</p>
+                                </div>
+                                <div class="text-end mt-3">
+                                    <span class="dettagli-link">Mehr erfahren →</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Aktivität 2 -->
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://www.parcofluvialenovella.it/canyoning-castelfondo-2/" class="text-decoration-none text-dark" target="_blank">
+                        <div class="card h-100">
+                            <img src="../imgs/canyoning.jpeg" class="card-img-top" alt="Canyoning">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title">Canyoning</h5>
+                                    <p class="card-text small">Abenteuer in Schluchten und Wasserfällen mit erfahrenen Guides entlang des beeindruckenden Novella-Bachs. Sie durchqueren dramatische Canyons, natürliche Rutschen und Wasserfälle - sicher und spannend. Ideal für Abenteuerlustige und Naturliebhaber.</p>
+                                </div>
+                                <div class="text-end mt-3">
+                                    <span class="dettagli-link">Mehr erfahren →</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Aktivität 3 -->
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://www.visitvaldinon.it" class="text-decoration-none text-dark" target="_blank">
+                        <div class="card h-100">
+                            <img src="../imgs/hiking.jpeg" class="card-img-top" alt="Wandern in den Bergen des Val di Non">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title">Wandern</h5>
+                                    <p class="card-text small">Panoramawanderungen durch Apfelgärten, zu alpinen Seen und Berghütten im Maddalene-Gebirge. Der Gastgeber, ein lokaler Experte, steht für Tipps und geführte Touren zur Verfügung (auf Anfrage). Familienfreundlich, mit kostenpflichtigem Autozugang zu den Bergen.</p>
+                                </div>
+                                <div class="text-end mt-3">
+                                    <span class="dettagli-link">Mehr erfahren →</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Aktivität 4 -->
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                    <a href="https://www.parcofluvialenovella.it/" class="text-decoration-none text-dark" target="_blank">
+                        <div class="card h-100">
+                            <img src="../imgs/outdoor_sports.jpeg" class="card-img-top" alt="Outdoor-Aktivitäten und Spaziergänge im Val di Non">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title">Flusspark Novella</h5>
+                                    <p class="card-text small">Ein faszinierender Weg durch Schluchten, Stege und unberührte Natur. Auch per Kajak mit erfahrenen Guides erkundbar. Ideal für Erwachsene und Kinder.</p>
+                                </div>
+                                <div class="text-end mt-3">
+                                    <span class="dettagli-link">Mehr erfahren →</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontaktbereich - hierher verschoben -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-up">Kontakt</h2>
+            <div class="contact-info-container" data-aos="fade-up" data-aos-delay="100">
+                <p class="lead">Für weitere Informationen rufen Sie uns gerne an!</p>
+
+                <div class="d-flex align-items-center mb-2">
+                    <span class="material-icons me-3">call</span>
+                    <strong class="me-2">Telefon:</strong> 
+                    <span>+39 347 693 1686</span>
+                </div>
+
+                <div class="d-flex align-items-center mb-2">
+                    <span class="material-icons me-3">email</span>
+                    <strong class="me-2">E-Mail:</strong>
+                    <a href="mailto:beb.raina@gmail.com" class="text-decoration-none text-dark">beb.raina@gmail.com</a>
+                </div>
+
+                <div class="d-flex align-items-center mb-2">
+                    <span class="material-icons me-3">camera_alt</span>
+                    <strong class="me-2">Instagram:</strong>
+                    <a href="https://www.instagram.com/beb.raina/" class="text-decoration-none text-dark" target="_blank">@beb.raina</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-3">
+        <p class="mb-0">Raina</p>
+        <p class="mb-0">Sous CIN IT022252C2ILU2GNKP</p>
+        <p class="mb-0">Ronchi CIN IT022252C2DIJIDLJT</p>
+        <p class="mb-0">Sorasù CIN IT022252C2O9N7B2W7</p>
+        <p class="mb-0">B&B CIN IT022252C15T2ZTXK8</p>
+        <p class="mb-0">beb.raina@gmail.com</p>
+        <p class="mb-0">(+39) 347 693 1686</p>
+        <p class="mb-0">Via Molinet 10, Ortsteil Castelfondo, 38013 Borgo d'Anaunia (TN)</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        once: true,
+        duration: 800
+    });
+    </script>
+
+    <!-- Cookie banner -->
+    <div id="cookie-banner" class="cookie-banner hidden">
+        <button id="close-button" class="close-button">x</button>
+        <p>
+            Wir verwenden Cookies, um Ihre Erfahrung zu verbessern.
+            Lesen Sie unsere <a href="cookies.html" target="_blank">Cookie-Richtlinie</a>.
+        </p>
+    </div>
+</body>
+</html>
